@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PROPACE Consultancy | Project Management Consulting & Corporate Training</title>
+<meta name="description" content="Practical project management consulting, digital transformation advisory and corporate training from Fiji, serving clients globally.">
+<meta name="theme-color" content="#003057">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#12234a;--deep:#0a1630;--gold:#b8900f;--ink:#16273a;--mute:#5a6b7d;--bg:#f4f7fa;--line:#dfe6ee;--r:14px;
+/* Optional: add a hero photo, e.g. --hero-img:url('hero.jpg'); */
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:86px}
+body{font-family:Inter,system-ui,Arial,sans-serif;color:var(--ink);line-height:1.65;background:#fff}
+h1,h2,h3,.logo{font-family:Sora,Inter,system-ui,sans-serif;color:var(--navy);line-height:1.15;letter-spacing:-.02em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1140px;margin:auto;padding:0 22px}
+section{padding:92px 0}.alt{background:var(--bg)}
+.eyebrow{font-size:.78rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin-bottom:12px}
+h2{font-size:clamp(1.8rem,3.4vw,2.6rem);margin-bottom:14px;font-weight:600}
+.lead{color:var(--mute);max-width:640px;margin-bottom:42px;font-size:1.06rem}
+.btn{display:inline-block;padding:14px 28px;border-radius:999px;font-weight:600;font-size:.95rem;border:2px solid transparent;cursor:pointer;transition:.25s;font-family:inherit}
+.btn.g{background:var(--gold);color:var(--deep)}.btn.g:hover{background:#d1a415;transform:translateY(-2px)}
+.btn.o{border-color:rgba(255,255,255,.65);color:#fff}.btn.o:hover{background:#fff;color:var(--navy)}
+.btn.n{background:var(--navy);color:#fff}.btn.n:hover{background:var(--gold)}
+.btn.l{border-color:var(--navy);color:var(--navy)}.btn.l:hover{background:var(--navy);color:#fff}
+header{position:fixed;inset:0 0 auto 0;z-index:50;background:#fff;box-shadow:0 2px 18px rgba(10,22,48,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:82px}.logo img{display:block;height:50px;width:auto}
+.logo{color:#fff;font-weight:700;font-size:1.3rem;letter-spacing:.06em}.logo span{color:var(--gold)}
+nav ul{display:flex;gap:28px;list-style:none;align-items:center}
+nav a{color:var(--navy);font-size:.93rem;font-weight:500;transition:.2s}nav a:hover{color:var(--gold)}
+nav .cta{background:var(--gold);color:var(--deep);padding:12px 24px;border-radius:999px;font-weight:600}nav .cta:hover{color:var(--deep);background:#d1a415}
+#tg{display:none;background:none;border:0;color:var(--navy);font-size:1.7rem;cursor:pointer}
+.hero{min-height:100vh;display:flex;align-items:center;color:#fff;padding:130px 0 80px;
+background:linear-gradient(100deg,rgba(10,22,48,.88) 18%,rgba(10,22,48,.5) 70%,rgba(10,22,48,.35)),url('images/hero.jpg') center/cover,radial-gradient(circle at 85% 25%,#24407a,transparent 55%),var(--deep)}
+.hero .eyebrow{color:var(--gold);letter-spacing:.18em}.hero .eyebrow:before{content:'';display:block;width:42px;height:3px;background:var(--gold);margin-bottom:18px}
+.hero h1{color:#fff;font-size:clamp(2.5rem,6.2vw,4.7rem);font-weight:600;margin-bottom:24px;max-width:900px}
+.hero h1 span{color:var(--gold)}
+.hero p.s{max-width:620px;color:#d3deea;font-size:1.15rem;margin-bottom:36px}
+.btns{display:flex;gap:14px;flex-wrap:wrap}
+.stats{display:flex;gap:48px;margin-top:64px;flex-wrap:wrap;border-top:1px solid rgba(255,255,255,.18);padding-top:30px}
+.stats b{display:block;font-family:Sora,sans-serif;font-size:1.6rem;color:var(--gold)}.stats small{color:#b5c5d8;font-size:.85rem}
+.grid{display:grid;gap:24px}.g3{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}.g2{grid-template-columns:repeat(auto-fit,minmax(320px,1fr))}
+.card{background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:32px;transition:.3s}
+.card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(0,48,87,.1);border-color:transparent}
+.bar{width:38px;height:4px;background:var(--gold);border-radius:2px;margin-bottom:18px}
+.card h3{font-size:1.2rem;margin-bottom:8px;font-weight:600}.card p{color:var(--mute);font-size:.95rem}
+ul.ck{list-style:none;margin-top:14px}ul.ck li{padding:5px 0 5px 26px;position:relative;font-size:.93rem}
+ul.ck li:before{content:"✓";position:absolute;left:0;color:var(--gold);font-weight:700}
+.about{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:start}
+.mv{display:grid;gap:18px;margin-top:26px}
+.mv div{background:var(--bg);border-left:4px solid var(--gold);padding:18px 22px;border-radius:0 var(--r) var(--r) 0}
+.mv b{display:block;color:var(--navy);font-family:Sora,sans-serif;font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:4px}
+.mv span{color:var(--mute);font-size:.96rem}
+.vals{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.vals .card{padding:24px}
+.photo{border-radius:var(--r);background:linear-gradient(135deg,var(--navy),#2c4f8f);background-size:cover;background-position:center;box-shadow:0 18px 40px rgba(10,22,48,.15)}.p1{height:280px;margin-bottom:26px;background-image:url('images/about.jpg'),linear-gradient(135deg,var(--navy),#2c4f8f)}.p2{height:320px;margin:56px 0 0;background-image:url('images/training.jpg'),linear-gradient(135deg,var(--navy),#2c4f8f);position:relative}.p2:after{content:'Training, workshops and in-house programmes';position:absolute;left:24px;bottom:20px;color:#fff;font-family:Sora,sans-serif;font-weight:600;font-size:1.1rem;text-shadow:0 2px 12px rgba(0,0,0,.5)}.deliv{margin-top:40px;text-align:center;color:var(--mute)}.deliv b{color:var(--navy)}
+.steps{counter-reset:s;grid-template-columns:repeat(auto-fit,minmax(210px,1fr))}
+.step:before{counter-increment:s;content:"0" counter(s);display:block;font-family:Sora,sans-serif;font-size:2.2rem;font-weight:700;color:var(--gold);margin-bottom:6px}
+.empty{text-align:center;max-width:680px;margin:auto;padding:46px 34px;background:var(--bg);border-radius:var(--r);border:1px dashed #b9c6d4}
+.empty h3{margin-bottom:10px;font-size:1.35rem}.empty p{color:var(--mute);margin-bottom:24px}
+.tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
+.ev{display:flex;gap:20px;align-items:flex-start;max-width:720px}
+.date{flex:0 0 70px;height:76px;border-radius:10px;background:var(--navy);color:#fff;text-align:center;padding-top:12px;line-height:1.1;font-family:Sora,sans-serif}
+.date b{display:block;font-size:1.4rem;color:var(--gold)}.date small{font-size:.68rem;letter-spacing:.1em}
+.band{background:linear-gradient(110deg,rgba(10,22,48,.94),rgba(18,35,74,.84)),url('images/cta.jpg') center/cover,var(--deep);color:#fff;text-align:center;padding:72px 0}
+.band h2{color:#fff}.band p{color:#c7d5e5;margin-bottom:26px}
+.contact{display:grid;grid-template-columns:1fr 1.2fr;gap:50px}
+.info p{margin:16px 0;color:var(--mute)}.info b{display:block;color:var(--navy);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase}
+.info a{color:var(--ink);font-weight:500}.info a:hover{color:var(--gold)}
+form{border:1px solid var(--line);border-radius:var(--r);padding:32px;display:grid;gap:16px;box-shadow:0 14px 38px rgba(0,48,87,.07)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{font-size:.8rem;font-weight:600;color:var(--navy);display:block;margin-bottom:5px}
+input,select,textarea{width:100%;padding:12px 14px;border:1px solid #c9d4e0;border-radius:8px;font:inherit;font-size:.95rem;background:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-color:var(--gold)}
+footer{background:var(--deep);color:#a9bad0;padding:54px 0 24px;font-size:.9rem}
+.fg{display:grid;grid-template-columns:1.6fr 1fr 1fr;gap:36px;margin-bottom:32px}
+footer h4{color:#fff;font-family:Sora,sans-serif;margin-bottom:12px;font-size:.95rem}footer li{list-style:none;margin:6px 0}footer a:hover{color:var(--gold)}
+.copy{border-top:1px solid rgba(255,255,255,.12);padding-top:20px;text-align:center;font-size:.82rem}
+.rv{opacity:0;transform:translateY(22px);transition:.7s}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){
+#tg{display:block}
+nav ul{display:none;position:absolute;top:82px;left:0;right:0;background:#fff;box-shadow:0 14px 24px rgba(10,22,48,.1);flex-direction:column;padding:22px;gap:18px}
+nav ul.open{display:flex}
+.about,.contact,.fg,.row{grid-template-columns:1fr}
+section{padding:64px 0}.stats{gap:28px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{transition:none;opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a href="#home" class="logo"><img src="logo.png" alt="PROPACE Consultancy" width="180" height="50"></a>
+<button id="tg" aria-label="Menu">☰</button>
+<nav><ul id="menu">
+<li><a href="#home">Home</a></li><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li>
+<li><a href="#testimonials">Testimonials</a></li><li><a href="#blog">Blog</a></li><li><a href="#events">Events</a></li>
+<li><a href="#contact">Contact</a></li><li><a href="#contact" class="cta">Talk to a consultant</a></li>
+</ul></nav></div></header>
+
+<main>
+<section class="hero" id="home"><div class="wrap">
+<p class="eyebrow">Project Management Consulting &amp; Training</p>
+<h1>Projects delivered. Teams built. <span>Results that last.</span></h1>
+<p class="s">PROPACE Consultancy provides practical project management consulting and corporate training for organisations across Fiji, the Pacific and beyond.</p>
+<div class="btns"><a href="#contact" class="btn g">Book a Free Consultation</a><a href="#services" class="btn o">View Our Services →</a></div>
+<div class="stats"><div><b>13+ years</b><small>Hands-on delivery, not theory</small></div><div><b>PMP · ITIL 4</b><small>Globally certified</small></div><div><b>On-site &amp; online</b><small>Fiji to the world</small></div></div>
+</div></section>
+
+<section class="alt"><div class="wrap">
+<p class="eyebrow">Why PROPACE</p><h2>Clarity, discipline and confidence</h2>
+<p class="lead">Too many projects run late, over budget or off course. PROPACE helps organisations deliver technology and business change with clarity, discipline and confidence. Our approach is built on 13+ years of hands-on delivery, not theory.</p>
+<div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(230px,1fr))">
+<div class="card rv"><div class="bar"></div><h3>Applied, not academic</h3><p>Frameworks adapted to your people, systems and culture.</p></div>
+<div class="card rv"><div class="bar"></div><h3>Delivery-proven</h3><p>Experience across ERP, digital transformation and cybersecurity-aligned projects.</p></div>
+<div class="card rv"><div class="bar"></div><h3>Globally certified</h3><p>PMP and ITIL 4 credentials, delivered from the Pacific to clients worldwide.</p></div>
+<div class="card rv"><div class="bar"></div><h3>Flexible</h3><p>On-site in Fiji, or live online anywhere.</p></div>
+</div></div></section>
+
+<section id="about"><div class="wrap about">
+<div class="rv"><p class="eyebrow">About Us</p><h2>Our story</h2>
+<p style="color:var(--mute)">PROPACE Consultancy was founded in Fiji to give organisations of every size access to world-class project delivery expertise. We believe good project management is a practical discipline: clear scope, honest planning, engaged people and steady governance.</p>
+<div class="mv"><div><b>Our mission</b><span>To help organisations deliver change successfully and to build the project capability of the people who deliver it.</span></div>
+<div><b>Our vision</b><span>To be the Pacific’s trusted partner for practical project delivery, with a reach that extends worldwide.</span></div></div></div>
+<div class="rv"><div class="photo p1" role="img" aria-label="Team in a project workshop"></div><p class="eyebrow">Our values</p>
+<div class="vals">
+<div class="card"><div class="bar"></div><h3>Practical</h3><p>Advice you can act on the same week.</p></div>
+<div class="card"><div class="bar"></div><h3>Honest</h3><p>Straight talk on risks, costs and trade-offs.</p></div>
+<div class="card"><div class="bar"></div><h3>Collaborative</h3><p>We work with your team, not around it.</p></div>
+<div class="card"><div class="bar"></div><h3>Excellence</h3><p>Quality and integrity in everything we deliver.</p></div>
+</div></div></div></section>
+
+<section id="services" class="alt"><div class="wrap">
+<p class="eyebrow">Services</p><h2>Support at every stage</h2>
+<p class="lead">Practical support at every stage of your project and your team’s development.</p>
+<div class="grid g3">
+<div class="card rv"><div class="bar"></div><h3>Project Management Consulting</h3><ul class="ck"><li>Project planning, scheduling and budgeting</li><li>Project Management Office (PMO) setup and governance</li><li>Project health checks and recovery</li><li>Risk, issue and stakeholder management</li><li>Interim and fractional project management</li></ul></div>
+<div class="card rv"><div class="bar"></div><h3>Digital Transformation Advisory</h3><ul class="ck"><li>ERP and business application selection and implementation oversight</li><li>Business analysis and requirements definition</li><li>Process improvement and change management</li><li>Aligning projects with cybersecurity and governance standards</li><li>Technology readiness and AI-adoption planning</li></ul></div>
+<div class="card rv"><div class="bar"></div><h3>Training &amp; Certifications</h3><ul class="ck"><li>Project Management Fundamentals</li><li>Agile and Hybrid Project Delivery</li><li>Business Analysis Essentials</li><li>ITIL 4 Foundations for service teams</li><li>Leading Project Teams and Stakeholder Communication</li><li>Tailored in-house programmes built around your projects</li></ul></div>
+</div>
+<div class="photo p2 rv" role="img" aria-label="Corporate training session"></div><p class="deliv" style="margin-top:34px"><b>Delivery options:</b> On-site · Live online · Blended</p>
+<h3 style="margin:56px 0 24px;text-align:center;font-weight:600">How we work</h3>
+<div class="grid steps">
+<div class="card step rv"><h3>Discover</h3><p>Understand your goals and challenges.</p></div>
+<div class="card step rv"><h3>Design</h3><p>Shape a right-sized solution.</p></div>
+<div class="card step rv"><h3>Deliver</h3><p>Execute with clear milestones.</p></div>
+<div class="card step rv"><h3>Embed</h3><p>Transfer skills so results last.</p></div>
+</div>
+<div style="text-align:center;margin-top:40px"><a href="#contact" class="btn n">Request a Proposal</a></div>
+</div></section>
+
+<section id="testimonials"><div class="wrap">
+<p class="eyebrow" style="text-align:center">Testimonials</p><h2 style="text-align:center">Measured by client results</h2>
+<p class="lead" style="margin-inline:auto;text-align:center">Our work is measured by the results our clients achieve.</p>
+<div class="empty rv"><h3>Client testimonials are on their way.</h3>
+<p>We only publish feedback that clients have approved. In the meantime, read how we work or talk to a consultant about your organisation.</p>
+<div class="btns" style="justify-content:center"><a href="#services" class="btn l">See How We Work</a><a href="#contact" class="btn n">Talk to a Consultant</a></div></div>
+</div></section>
+
+<section id="blog" class="alt"><div class="wrap">
+<p class="eyebrow">Blog</p><h2>Insights from the field</h2>
+<p class="lead">Practical insights on project delivery, digital transformation and team capability.</p>
+<div class="empty rv"><h3>Our first articles are coming soon.</h3><p>Check back shortly, or get in touch to suggest a topic you would like us to cover.</p><a href="#contact" class="btn l">Suggest a Topic</a></div>
+</div></section>
+
+<section id="events"><div class="wrap">
+<p class="eyebrow">Events</p><h2>Workshops, webinars &amp; networking</h2>
+<p class="lead">Workshops, webinars and networking sessions for project professionals and business leaders.</p>
+<!-- Duplicate this card for each upcoming event -->
+<div class="card ev rv"><div class="date"><b>[DD]</b><small>[MON]</small></div>
+<div><span class="tag">Upcoming</span><h3>[Event title]</h3><p>[Date · Time · Venue or Online]<br>[Short description]</p><a class="btn l" href="#contact" style="margin-top:14px;padding:10px 22px">Register</a></div></div>
+</div></section>
+
+<div class="band"><div class="wrap"><h2>Let’s talk about your project</h2><p>Whether you need a project rescued, a team trained or a transformation planned.</p><a href="mailto:propaceconsultancy@gmail.com?subject=Free%2030-Minute%20Consultation" class="btn g">Book a Free 30-Minute Consultation</a></div></div>
+
+<section id="contact"><div class="wrap contact">
+<div class="info rv"><p class="eyebrow">Contact</p><h2>Let’s talk about your project.</h2>
+<p>Whether you need a project rescued, a team trained or a transformation planned, we’d like to hear from you. Expect a reply within one business day.</p>
+<p><b>Email</b><a href="mailto:propaceconsultancy@gmail.com">propaceconsultancy@gmail.com</a></p>
+<p><b>Phone / WhatsApp</b><a href="tel:+6798341496">+679 834 1496</a></p>
+<p><b>Location</b>Based in Suva, Fiji · Serving clients globally</p>
+<p><b>Hours</b>Monday to Friday, [hours] (Fiji Time, UTC+12)</p>
+<p><b>LinkedIn</b><a href="[LinkedIn URL]">[Profile link]</a></p></div>
+<form id="f" class="rv">
+<div class="row"><div><label for="n">Full name</label><input id="n" required></div><div><label for="o">Organisation</label><input id="o"></div></div>
+<div class="row"><div><label for="e">Email</label><input id="e" type="email" required></div><div><label for="p">Phone</label><input id="p"></div></div>
+<div><label for="s">Service of interest</label><select id="s"><option>Consulting</option><option>Training</option><option>Digital Transformation</option><option>Other</option></select></div>
+<div><label for="m">Message</label><textarea id="m" rows="5" required></textarea></div>
+<button class="btn n" type="submit">Send Enquiry</button>
+</form></div></section>
+</main>
+
+<footer><div class="wrap">
+<div class="fg">
+<div><img src="logo-white.png" alt="PROPACE Consultancy" height="46" style="height:46px;width:auto;margin-bottom:14px;display:block"><p>Practical project management consulting and corporate training. Based in Suva, Fiji, serving clients globally.</p></div>
+<div><h4>Explore</h4><ul><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#blog">Blog</a></li><li><a href="#events">Events</a></li></ul></div>
+<div><h4>Services</h4><ul><li>Project Management Consulting</li><li>Digital Transformation Advisory</li><li>Training &amp; Certifications</li></ul></div>
+</div>
+<div class="copy">© <span id="y">2026</span> PROPACE Consultancy. All rights reserved.</div>
+</div></footer>
+
+<script>
+document.getElementById('y').textContent=new Date().getFullYear();
+var m=document.getElementById('menu');
+document.getElementById('tg').onclick=function(){m.classList.toggle('open')};
+m.addEventListener('click',function(e){if(e.target.tagName==='A')m.classList.remove('open')});
+var io=new IntersectionObserver(function(a){a.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
+document.querySelectorAll('.rv').forEach(function(el){io.observe(el)});
+// Opens the visitor's email app. For a hosted form, swap in Formspree or similar.
+document.getElementById('f').onsubmit=function(e){e.preventDefault();
+var g=function(i){return document.getElementById(i).value};
+location.href='mailto:propaceconsultancy@gmail.com?subject='+encodeURIComponent('Enquiry: '+g('s'))+'&body='+encodeURIComponent('Name: '+g('n')+'\nOrganisation: '+g('o')+'\nEmail: '+g('e')+'\nPhone: '+g('p')+'\n\n'+g('m'))};
+</script>
+</body>
+</html>
